@@ -1,0 +1,15 @@
+{
+  "name": "www.mokbel.io",
+  "version": "1.0.0",
+  "description": "source code for the website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "George Mokbel",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "purify-css": "^1.2.5"
+  }
+}
