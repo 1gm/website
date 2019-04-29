@@ -1,0 +1,21 @@
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="{{ .Permalink }}images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{ .Permalink }}images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ .Permalink }}images/favicon-48x48.png" sizes="48x48">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway|Roboto|Roboto+Mono" as="fetch"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto|Roboto+Mono" rel="stylesheet">
+    {{ $style := resources.Get "css/styles.scss" | toCSS | fingerprint }}
+    <link rel="stylesheet" type='text/css' href="{{ $style.Permalink }}">
+    <title>{{.Site.Title}}</title>
+    {{- if eq .Site.Title .Title -}}
+    <link rel="canonical" content="{{ .Site.BaseURL }}" />
+    {{ else }}
+    <link rel="canonical" content="{{ .Permalink }}" />
+    {{- end -}}
+</head>

@@ -1,3 +1,11 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.mokbel.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "George Mokbel's website - mokbel.io"
+canonifyURLs = true
+disableHugoGeneratorInject = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+[params]
+    brand = "mokbel.io"
+    github = "https://github.com/1gm"
+    reddit = "https://www.reddit.com/user/mokbel"
+    linkedin = "https://www.linkedin.com/in/gmokbel/"
