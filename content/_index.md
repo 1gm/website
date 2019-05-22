@@ -2,8 +2,10 @@
 
 ---
 
-My name is George Mokbel, I'm a freelance programmer from Southern California.  
+# About
 
-Sometimes I post code related things on [my GitHub profile](https://github.com/1gm).  
+My name is George Mokbel, I live in Southern California.  
 
-I'm an acoustic guitar player, singer, and songwriter. You can find some of my work on [my YouTube channel](https://youtube.com/GeorgeGoesAcoustic).
+I'm a freelance programmer and occasionally I post code on [my GitHub profile](https://github.com/1gm).  
+
+My hobbies include playing video games, songwriting, singing, and lifting weights. You can find some of my music on [my YouTube channel](https://youtube.com/GeorgeGoesAcoustic).
