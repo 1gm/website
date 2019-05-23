@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket = "mokbel.tfstate"
+    key    = "www.mokbel.io.tfstate"
+    region = "us-east-1"
+  }
+}
+
 provider "aws" {
     region = "${var.region}"
 }
