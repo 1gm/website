@@ -1,5 +1,7 @@
 // CLOUDFRONT
 resource "aws_cloudfront_distribution" "redirected_distribution" {
+  comment = "${var.redirected_domain_name} -> ${var.domain_name}"
+
   origin {
     custom_origin_config {
       http_port              = "80"
@@ -47,6 +49,8 @@ resource "aws_cloudfront_distribution" "redirected_distribution" {
 }
 
 resource "aws_cloudfront_distribution" "domain_distribution" {
+  comment = "${var.domain_name} -> s3 bucket"
+
   // origin is where CloudFront gets its content from.
   origin {
     // We need to set up a "custom" origin because otherwise CloudFront won't
@@ -69,6 +73,7 @@ resource "aws_cloudfront_distribution" "domain_distribution" {
   enabled             = true
   default_root_object = "index.html"
   wait_for_deployment = false 
+  
   // All values are defaults from the AWS console.
   default_cache_behavior {
     viewer_protocol_policy = "redirect-to-https"
